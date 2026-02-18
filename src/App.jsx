@@ -6,7 +6,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const App = () => {
-  // Smooth scrolling
   useEffect(() => {
     const lenis = new Lenis()
 
@@ -22,7 +21,6 @@ const App = () => {
     }
   }, [])
 
-  // GSAP + ScrollTrigger animations
   useEffect(() => {
     const elems = document.querySelectorAll('.elem')
     if (!elems.length) return
